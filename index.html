@@ -126,7 +126,8 @@ opacity:1;
 </style>
 <script>
   if( /Android|webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    screen.lockOrientation('landscape');
+    var myScreenOrientation = window.screen.orientation;
+    myScreenOrientation.lock("landscape");
   }
 </script>
   </div>
