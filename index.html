@@ -16,7 +16,6 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 </head>
 <body>
   <div class="w-embed">
@@ -125,6 +124,11 @@ z-index:100;
 opacity:1;
 }*/
 </style>
+<script>
+  if( /Android|webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    screen.lockOrientation('landscape');
+  }
+</script>
   </div>
   <div class="nav div-block-7"><a href="index.html" aria-current="page" class="logo w-inline-block w--current"><img src="images/Logo.svg" height="24" width="24" alt=""></a><a data-w-id="f0aff78f-2e6b-3aee-153f-bfebda7071a3" href="#" class="menu w-inline-block"><img src="images/Menu.svg" width="24" height="24" alt=""></a>
     <div data-w-id="cfb793e2-59be-46ad-fd28-ab9ab48e7e54" class="link_box">
